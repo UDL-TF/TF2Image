@@ -51,7 +51,7 @@ if [ ! -z "${SRCDS_STEAM_PORT}" ]; then
 fi
 
 TV_PARAMS=""
-if [ ! -z "${TV_PORT}" ]; then
+if [ ! -z "${SRCDS_TV_PORT}" ]; then
     TV_PARAMS="-hltv +tv_enable \"1\""
 fi
 
