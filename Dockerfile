@@ -16,11 +16,11 @@ RUN set -x \
   && apt-get update \
   && apt-get install -y --no-install-recommends --no-install-suggests \
   wget \
-  ca-certificates \
+  ca-certificates=20230311+deb12u1 \
   lib32z1 \
-  libncurses5:i386 \
+  libncurses5:i386=6.4-4 \
   libbz2-1.0:i386 \
-  libtinfo5:i386 \
+  libtinfo5:i386=6.4-4 \
   libcurl3-gnutls:i386 \
   libcurl3-gnutls \
   libc6 \
@@ -46,7 +46,6 @@ RUN set -x \
   libncurses5-dev \
   libncursesw5-dev \
   lib32ncurses-dev \
-  libncurses5:i386 \
   && mkdir -p "${STEAMAPPDIR}" \
   # Create autoupdate config
   && { \
