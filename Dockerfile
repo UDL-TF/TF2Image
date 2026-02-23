@@ -16,11 +16,11 @@ RUN set -x \
   && apt-get update \
   && apt-get install -y --no-install-recommends --no-install-suggests \
   wget \
-  ca-certificates=20230311+deb12u1 \
+  ca-certificates \
   lib32z1 \
-  libncurses5:i386=6.4-4 \
+  libncurses6:i386 \
   libbz2-1.0:i386 \
-  libtinfo5:i386=6.4-4 \
+  libtinfo6:i386 \
   libcurl3-gnutls:i386 \
   libcurl3-gnutls \
   libc6 \
